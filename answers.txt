@@ -1,0 +1,63 @@
+(1.1)  Do the following IN YOUR BROWSER, no programming required.  Please write down your answers (concise answers please).
+
+Use your browsers development tools.  Open the network tab and analyze the network for the following:
+
+a) go to https://www.ebay.com and search for "amazon gift card"
+	
+	-	opened the above mentioned website
+
+b) what type of search request is eBay using, GET or POST?
+
+	-	eBay is using GET request method
+
+c) which URL variable represents the search term?
+
+	-	"_nkw" represents the search term
+ 
+d) on the left-hand side of the page, find “Show only” and select “Sold Items” (you may have to scroll down a little bit). Which URL variable represents display sold items only?
+
+	-	"LH_Sold=1" represents the solf items only
+	
+e) can you come up with a shorter URL that produces the same search result page?
+
+	-	shorter URL: https://www.ebay.com/sch/i.html?_nkw=amazon+gift+card&LH_Sold=1&LH_Complete=1&_pgn=1 
+	
+f) click on the next search result page and observe how the URL changes. What variable in the URL identifies the page number?
+
+	-	the variable "_pgn" was added when we clicked the next search result page. If "_pgn=1", this is basically the first search result page.
+	
+g) what is the feature common to each item in the search results page? e., what item do I need to select to obtain each item among the search results?
+
+	-	I can obtain each item amon the search results by selecting the path : '#srp-river-results > ul > li > div > div.s-item__info.clearfix' 
+
+		So under this block, i can access each element (as in title, price, shipping value etc etc)
+
+		However, in my code i have extracted these individual items in a slightly different way where in i stored all the content of the 10 pages in a list where each element is a page. 
+		Then i have used "s-item__wrapper clearfix" followed by 's-item__title', 's-item__price' and 's-item__shipping s-item__logisticsCost' to extract the corresponding values. 
+	
+	
+	
+
+(2.1)  Do the following IN YOUR BROWSER, no programming required.  Please write down your answers (concise answers please).
+
+a) go to fctables.com Links to an external site.and create an account. Please choose a username + password combination that you are comfortable sharing with us.
+	
+	-	username: jorn_the_boss
+
+		password: 1q2w3e4r5t
+
+b) log into your account.
+
+	-	action done
+
+c) search for “Bayern Munich”. (While I do not support any particular football team, I am always happy to see this team lose.)  Bayern Munich is playing Wolfsburg on February 5.  Let’s select that game.
+
+	-	search done
+	
+d) let’s place a virtual bet against Bayern. To do this, click on “1” inside of “1X2” and then “Place bet”.  (This mean that you think the home team, Wolfsburg, will win.  Unfortunately, the odds are not in their favor.)
+
+	-	placed bet
+
+e) now go to https://www.fctables.com/tipster/my_bets/ Links to an external site.and confirm that your virtual bet on the match “Wolfsburg vs Bayern Munich” appears there.
+
+	-	yes, the bet appears
